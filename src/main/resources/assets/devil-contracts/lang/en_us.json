@@ -1,0 +1,9 @@
+{
+  "item.devil-contracts.steel": "Steel",
+  "item.devil-contracts.coal_nugget": "Coal Nugget",
+
+  "block.devil-contracts.steel_block": "Block of Steel",
+
+  "itemgroup.devil-contracts.devil_contracts_items": "Devil Contract Items",
+  "itemgroup.devil-contracts.devil_contracts_blocks": "Devil Contract Blocks"
+}

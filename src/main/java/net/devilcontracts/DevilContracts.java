@@ -1,9 +1,9 @@
 package net.devilcontracts;
 
+import net.devilcontracts.block.ModBlocks;
+import net.devilcontracts.item.ModItemGroups;
+import net.devilcontracts.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
-import net.minecraft.util.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,5 +13,11 @@ public class DevilContracts implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
+
 	}
 }
