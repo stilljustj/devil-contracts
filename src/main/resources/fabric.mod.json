@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "devil-contracts",
+	"version": "${version}",
+	"name": "Devil Contracts",
+	"description": "*Chainsaw noises*",
+	"authors": [
+		"justj"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/devil-contracts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.devilcontracts.DevilContracts"
+		],
+		"fabric-datagen": [
+			"net.devilcontracts.DevilContractsDataGenerator"
+		],
+		"client": [
+			"net.devilcontracts.DevilContractsClient"
+			]
+	},
+	"mixins": [
+		"devil-contracts.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
