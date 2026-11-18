@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "devil-contracts:steel"
+    }
+  },
+  "pattern":[
+    "###",
+    "###",
+    "###"
+    ],
+  "result": {
+    "count": 1,
+    "id": "devil-contracts:steel_block"
+  }
+}

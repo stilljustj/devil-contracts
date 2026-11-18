@@ -1,4 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building"
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "devil-contracts:steel_block"
+      }
+    ],
+    "result": {
+      "count": 9,
+      "id": "devil-contracts:steel"
+    }
 }
