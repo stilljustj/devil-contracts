@@ -12,20 +12,19 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-public static final Block STEEL_BLOCK = registerBlock(
-        new Block(AbstractBlock.Settings.create().strength(5f)
-        .requiresTool().sounds(BlockSoundGroup.COPPER)));
+    public static final Block STEEL_BLOCK = registerBlock(
+            new Block(AbstractBlock.Settings.create().strength(5f)
+                    .requiresTool().sounds(BlockSoundGroup.COPPER)));
 
 
+    private static Block registerBlock(Block block) {
+        registerBlockItem(block);
+        return Registry.register(Registries.BLOCK, Identifier.of(DevilContracts.MOD_ID, "steel_block"), block);
+    }
 
-private static Block registerBlock(Block block) {
-    registerBlockItem(block);
-    return Registry.register(Registries.BLOCK, Identifier.of(DevilContracts.MOD_ID, "steel_block"), block);
-}
-
-private static void registerBlockItem(Block block) {
-    Registry.register(Registries.ITEM, Identifier.of(DevilContracts.MOD_ID, "steel_block"),
-            new BlockItem(block, new Item.Settings()));
+    private static void registerBlockItem(Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(DevilContracts.MOD_ID, "steel_block"),
+                new BlockItem(block, new Item.Settings()));
     }
 
 

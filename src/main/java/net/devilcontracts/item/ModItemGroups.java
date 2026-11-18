@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.STEEL);
                         entries.add(ModItems.COAL_NUGGET);
+                        entries.add(ModItems.KNIFE);
                     })
                     .build());
 
